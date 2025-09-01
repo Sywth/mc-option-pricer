@@ -1,18 +1,13 @@
-# Monte Carlo Option Pricer + Greeks
+# Black–Scholes Option Pricer + Greeks
 
-Monte Carlo pricer for European call options under Black–Scholes with:
-- Antithetic & control-variate variance reduction
-- Pathwise / CRN-bump Greeks ($\Delta$, $\Gamma$, $\nu$)
+Pricer for European call options under Black–Scholes assumptions. 
 
-Deployed live here: [Streamlit App](https://YOUR-DEPLOYED-LINK)
-
-
-## Quick start
+Deployed live [here](https://bs-option-pricer.streamlit.app/).
 
 ### Cloning & Environment
 ```bash
 # clone and create env
-git clone https://github.com/YOUR-USERNAME/mc_pricer.git
+git clone https://github.com/Sywth/mc-option-pricer
 cd mc_pricer
 conda create -n mc_pricer python=3.12
 conda activate mc_pricer
@@ -25,8 +20,10 @@ streamlit run app_streamlit.py
 ```
 
 
-### Adding Changes  
 ```bash 
-# Update new requirements 
-pip freeze > requirements.txt
+# Update new requirements via pipreqs
+pipreqs
+
+# if not already installed; install via 
+pip install pipreqs
 ```
