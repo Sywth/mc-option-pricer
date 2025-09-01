@@ -116,6 +116,7 @@ def get_fig_gamma(XS, YS, ZS):
 
 
 def main():
+    # Page
     st.sidebar.title("Graphing Arguments")
     epsilon = 1e-3
 
@@ -305,6 +306,9 @@ def main():
     st.write(
         "Where $\phi$ is the [normal pdf](https://en.wikipedia.org/wiki/Normal_distribution)."
     )
+
+    # sidebar footer
+    st.sidebar.link_button("🔗 LinkedIn", "https://www.linkedin.com/in/sp-ucl")
 
 
 # TODO :
